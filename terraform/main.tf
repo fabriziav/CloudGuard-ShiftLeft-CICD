@@ -37,7 +37,7 @@ resource "aws_security_group" "prov_fw" {
     to_port = 22
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+ 
   ingress {
     from_port = 80
     protocol = "tcp"
