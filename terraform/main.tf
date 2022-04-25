@@ -11,7 +11,7 @@ resource "aws_instance" "ec2-prod" {
     private_key = file("~/testec2.pem")
     user = "ec2-user"
   }
-
+#test
   provisioner "remote-exec" {
     inline = ["sudo yum -y update", "sudo yum install -y httpd", "sudo service httpd start", "echo '<!doctype html><html><body><h1>CONGRATS!!..You have configured successfully your remote exec provisioner!</h1></body></html>' | sudo tee /var/www/html/index.html"]
   }
