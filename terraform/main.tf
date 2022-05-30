@@ -68,5 +68,6 @@ resource "null_resource" "prov_null" {
   }
 }
 */
- 
+
+password: "test1235"
 #comment
