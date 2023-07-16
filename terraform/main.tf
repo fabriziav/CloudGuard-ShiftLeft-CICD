@@ -69,6 +69,3 @@ resource "null_resource" "prov_null" {
 }
 */
 
-  
- 
-#comment
